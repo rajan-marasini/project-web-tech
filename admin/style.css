@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    color: white;
+    background-color: black;
+    position: sticky;
+    top: 0;
+}
+.nav {
+    position: sticky;
+    top: 0;
+    gap: 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    flex-wrap: nowrap;
+}
+header a > button {
+    height: 40px;
+    font-size: 20px;
+}
+
+a > button {
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    color: #ddd;
+    font-family: bolder;
+    background-color: #222;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.dashboard > h1 {
+    margin-bottom: 40px;
+}
+
+.main-db {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.message {
+    gap: 2rem;
+}
+
+.box {
+    height: 10rem;
+    width: 20rem;
+    border-radius: 20px;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.box > span:nth-child(1) {
+    display: block;
+    font-size: 4rem;
+    font-weight: bold;
+}
+.box > span:nth-child(2) {
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    background-color: #ddd;
+    margin: auto;
+}
+
+table {
+    width: 100%;
+}
+table tr th {
+    border-bottom: 2px solid black;
+    padding: 1%;
+    text-align: left;
+}
+table tr td {
+    padding: 0.5%;
+}
+
+form {
+    background-color: papayawhip;
+}
+
+input {
+    padding: 0.5rem 1rem;
+    width: 20rem;
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 0.5rem 2rem;
+    margin: auto;
+    width: max-content;
+}
+.btn-primary {
+    background-color: #1b9cfc;
+    border: none;
+}
+.btn-primary:hover {
+    background-color: #25ccf7;
+}
+
+.btn-secondary {
+    background-color: #63cdda;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #3dc1d3;
+}
+.btn-danger {
+    background-color: #cf6a87;
+    border: none;
+}
+.btn-danger:hover {
+    background-color: #c44569;
+}
+.success {
+    color: lightgreen;
+}
+.failed {
+    color: red;
+}

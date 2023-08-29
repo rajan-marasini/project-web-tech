@@ -1,0 +1,410 @@
+.header {
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    color: white;
+    border-bottom: 2px solid red;
+}
+.navlinks {
+    gap: 2rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    position: relative;
+}
+.navlogo {
+    width: 10rem;
+}
+.navlogo > img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+button {
+    outline: none;
+    border: none;
+    padding: 0.5rem 1.4rem;
+    font-weight: 600;
+}
+a > button {
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    color: #ddd;
+    font-size: 20px;
+    font-family: bolder;
+    background-color: #222;
+    border-radius: 5px;
+    height: 40px;
+    outline: none;
+    border: none;
+}
+.toggle {
+    display: none;
+    background-color: white;
+    height: 2rem;
+    padding: 0 5px;
+    width: 3rem;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+
+    overflow: hidden;
+}
+.toggle > span {
+    position: absolute;
+    top: 50%;
+    border-radius: 2px;
+    background-color: lightgreen;
+    height: 3px;
+    transition: all 0.4s ease-in;
+
+    width: 80%;
+}
+.toggle > span:nth-child(1) {
+    transform: translateY(-8px);
+    width: 60%;
+}
+.toggle > span:nth-child(3) {
+    transform: translateY(8px);
+    width: 50%;
+}
+
+.active {
+    overflow: hidden;
+    transition: all 0.4s ease-in;
+}
+
+.active > span:nth-child(2) {
+    transform: translateX(100px);
+}
+.active > span:nth-child(1) {
+    width: 60%;
+    transform: rotate(45deg);
+}
+.active > span:nth-child(3) {
+    width: 60%;
+    transform: rotate(135deg);
+}
+
+@media screen and (max-width: 768px) {
+    .toggle {
+        display: block;
+    }
+    .navlinks {
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        gap: 0.4rem;
+        right: 1rem;
+        top: 4rem;
+    }
+}
+
+.hero-container {
+    position: relative;
+}
+.hero {
+    color: white;
+    justify-content: space-between;
+}
+.hero-left {
+    flex: 1;
+    gap: 1rem;
+}
+
+.hero-title > h1 {
+    font-size: 4rem;
+    color: rgba(255, 0, 0, 0.721);
+    margin-bottom: 1rem;
+}
+.hero-desc > * {
+    color: rgba(255, 255, 255, 0.611);
+}
+
+.search-bar {
+    justify-content: space-between;
+    background-color: white;
+    padding: 0 0 0 0.5rem;
+    border: 2px solid rgba(255, 255, 255, 0.225);
+    border-radius: 12px;
+    overflow: hidden;
+
+    width: 50%;
+    height: 2.5rem;
+}
+.search-bar > i {
+    color: blue;
+}
+.search-bar > input {
+    border: none;
+    outline: none;
+    padding: 0 0.4rem;
+    flex: 1;
+}
+.search-bar > button {
+    border-radius: 0 12px 12px 0;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.stats {
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.stat > span:nth-child(1) {
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(255, 77, 0);
+}
+
+@media screen and (max-width: 768px) {
+    .image-container {
+        display: none;
+    }
+}
+
+.c-container {
+    justify-content: space-around;
+    gap: 1rem;
+    background-color: white;
+}
+
+.c-container > img {
+    width: 9rem;
+}
+
+.r-card {
+    gap: 0.6rem;
+    padding: 1rem;
+    border-radius: 10px;
+    max-width: max-content;
+    margin: auto;
+    transition: all 300ms ease-in;
+    color: white;
+    overflow: hidden;
+}
+
+.r-card > img {
+    width: 100%;
+    max-width: 15rem;
+}
+
+.r-card > :nth-child(2) {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.r-card > :nth-child(3) {
+    font-size: 1.5rem;
+}
+.r-card > :nth-child(4) {
+    font-size: 0.7rem;
+    width: 15rem;
+}
+.r-card:hover {
+    scale: 1.025;
+    cursor: pointer;
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(136, 160, 255, 0.46) 217.91%
+    );
+    box-shadow: 0px 72px 49px -51px rgba(136, 160, 255, 0.21);
+}
+.swiper-btn {
+    position: absolute;
+    border: 2px solid red;
+    top: 0;
+}
+.showmore {
+    margin: auto;
+}
+
+.btn {
+    color: black;
+    margin: auto;
+    cursor: pointer;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 15px;
+    align-items: center;
+    background-color: #ddd;
+}
+.btn > ion-icon {
+    color: black;
+}
+
+.showmore::before,
+.showmore::after {
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 25rem;
+    background-color: red;
+    margin-bottom: 7px;
+}
+
+@media screen and (max-width: 768px) {
+    .showmore::before,
+    .showmore::after {
+        width: 10rem;
+    }
+}
+
+.frequently {
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    flex-wrap: nowrap;
+    gap: 6rem;
+}
+.faq > h1 {
+    margin-bottom: 2rem;
+}
+
+.faq {
+    background-color: #000;
+    margin-top: 7px;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%s;
+}
+.faq .question,
+.faqanswer {
+    font-size: 18px;
+    background-color: #222;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 7px;
+}
+.faq ion-icon {
+    font-size: 25px;
+}
+.faq .question:hover {
+    background: darkslategrey;
+}
+.faq .md.hydrated.active {
+    transform: rotate(45deg);
+}
+
+.faqanswer {
+    display: none;
+    margin-top: -3px;
+    height: auto;
+    font-size: 0.8rem;
+}
+.faqanswer.active {
+    display: inline;
+}
+
+footer {
+    background-color: #000;
+    margin-top: 7px;
+    color: white;
+    padding: 50px 50px;
+    font-size: 12px;
+    border-top: 2px solid red;
+}
+footer .contactus {
+    margin-bottom: 30px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact {
+    border-top: 2px solid red;
+    justify-content: space-between;
+    color: white;
+}
+
+.contact-left {
+    gap: 2rem;
+}
+
+.contact-left > h1 {
+    text-align: center;
+    font-weight: bold;
+}
+.contact-form {
+    width: 500px;
+    gap: 15px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.form-group label {
+    font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.form-group textarea {
+    resize: vertical;
+}
+.form-group > input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: max-content;
+    text-transform: capitalize;
+    transition: background-color 0.3s ease;
+}
+.form-group input[type="submit"]:hover {
+    background-color: #04458b;
+}
+
+footer a {
+    display: block;
+    color: white;
+    padding: 10px;
+}
+footer .footerlinks {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 300px);
+    gap: 10px;
+}
+footer #country {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 180px;
+    font-size: 20px;
+    background-color: #fff;
+    text-align: center;
+    margin: 40px auto;
+}
+footer #country ion-icon {
+    color: black;
+}
+footer select {
+    height: 30px;
+    width: 150px;
+    font-size: 15px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+}
+
+.success {
+    color: lightgreen;
+}
+.failed {
+    color: red;
+}
