@@ -181,7 +181,6 @@
 </head>
 
 <body>
-    <img src="images/netflixlogo.jpg" alt="" class="logopng" />
     <div class="container">
 
         <?php

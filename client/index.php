@@ -138,7 +138,25 @@ include "./login-check.php";
 
                     <div class="swiper-slide">
                         <div class="flexColStart r-card">
-                            <img src="./hotels/r1.png" alt="home" />
+                            <img src="./hotels/r2.png" alt="home" />
+
+                            <span class="secondaryText r-price">
+                                <span style="color: orangered"> Rs </span>
+                                <span>47,024</span>
+                            </span>
+                            <span class="primaryText">
+                                Aliva Priva Jardin
+                            </span>
+                            <span class="secondaryText">
+                                Jakarta Garden City Street, Cakung. Pulo
+                                Gadung, Jakarta Timur, DKI Jakarta
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="flexColStart r-card">
+                            <img src="./hotels/r3.png" alt="home" />
 
                             <span class="secondaryText r-price">
                                 <span style="color: orangered"> Rs </span>
@@ -174,7 +192,7 @@ include "./login-check.php";
 
                     <div class="swiper-slide">
                         <div class="flexColStart r-card">
-                            <img src="./hotels/r1.png" alt="home" />
+                            <img src="./hotels/r2.png" alt="home" />
 
                             <span class="secondaryText r-price">
                                 <span style="color: orangered"> Rs </span>
@@ -192,25 +210,7 @@ include "./login-check.php";
 
                     <div class="swiper-slide">
                         <div class="flexColStart r-card">
-                            <img src="./hotels/r1.png" alt="home" />
-
-                            <span class="secondaryText r-price">
-                                <span style="color: orangered"> Rs </span>
-                                <span>47,024</span>
-                            </span>
-                            <span class="primaryText">
-                                Aliva Priva Jardin
-                            </span>
-                            <span class="secondaryText">
-                                Jakarta Garden City Street, Cakung. Pulo
-                                Gadung, Jakarta Timur, DKI Jakarta
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="flexColStart r-card">
-                            <img src="./hotels/r1.png" alt="home" />
+                            <img src="./hotels/r3.png" alt="home" />
 
                             <span class="secondaryText r-price">
                                 <span style="color: orangered"> Rs </span>
@@ -273,7 +273,24 @@ include "./login-check.php";
                     </div>
                     <div class="swiper-slide">
                         <div class="flexColStart r-card">
-                            <img src="./hotels/r2.png" alt="home" />
+                            <img src="./hotels/r3.png" alt="home" />
+
+                            <span class="secondaryText r-price">
+                                <span style="color: orangered"> Rs </span>
+                                <span>15,999</span>
+                            </span>
+                            <span class="primaryText">
+                                Citralan Puri Serang
+                            </span>
+                            <span class="secondaryText">
+                                Ruko Puri Indah Residence Block A7, Lingkar
+                                Street, Ciracas, Serang, Banten
+                            </span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="flexColStart r-card">
+                            <img src="./hotels/r1.png" alt="home" />
 
                             <span class="secondaryText r-price">
                                 <span style="color: orangered"> Rs </span>
@@ -307,7 +324,7 @@ include "./login-check.php";
                     </div>
                     <div class="swiper-slide">
                         <div class="flexColStart r-card">
-                            <img src="./hotels/r2.png" alt="home" />
+                            <img src="./hotels/r3.png" alt="home" />
 
                             <span class="secondaryText r-price">
                                 <span style="color: orangered"> Rs </span>
@@ -324,24 +341,7 @@ include "./login-check.php";
                     </div>
                     <div class="swiper-slide">
                         <div class="flexColStart r-card">
-                            <img src="./hotels/r2.png" alt="home" />
-
-                            <span class="secondaryText r-price">
-                                <span style="color: orangered"> Rs </span>
-                                <span>15,999</span>
-                            </span>
-                            <span class="primaryText">
-                                Citralan Puri Serang
-                            </span>
-                            <span class="secondaryText">
-                                Ruko Puri Indah Residence Block A7, Lingkar
-                                Street, Ciracas, Serang, Banten
-                            </span>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="flexColStart r-card">
-                            <img src="./hotels/r2.png" alt="home" />
+                            <img src="./hotels/r1.png" alt="home" />
 
                             <span class="secondaryText r-price">
                                 <span style="color: orangered"> Rs </span>
@@ -564,7 +564,7 @@ include "./login-check.php";
                         font-size: 20px;
                         text-align: center;
                     ">
-                Book My Hotel &copy; Since 2020
+                BookMyTrip &copy; Since 2020
             </p>
         </footer>
     </section>
